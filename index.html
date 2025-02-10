@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Focus Timer</title>
+        <!-- reset.css -->
+        <link rel="stylesheet" href="includes/reset.css">
+        <!-- style.css active -->
+        <link rel="stylesheet" href="includes/styles.css">
+        <!-- Google type face -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="background"></div>
+        <nav id="header">
+            <p id="logo">Focus Timer</p>
+            <!-- <p id="settings">Customize</p> -->
+        </nav>
+
+        <div id="rectangle"></div>
+        
+        <div id="timer">
+            <p id="numbers">
+                <span id="minutes">25</span>:<span id="seconds">00</span>
+            </p>
+            <p id="message"></p>
+            
+            <button type="button" id="focus" class="button"> 
+                <p>Focus</p>
+            </button>
+
+            <button type="button" id="break" class="button">
+               <p>Break</p>
+            </button>
+
+            <button type="button" id="starttimer" class="button">
+                <p id="timerName">Start</p>
+            </button>
+        </div>
+
+            <script src="includes/script.js"></script>
+
+    </body>
+
+</html>

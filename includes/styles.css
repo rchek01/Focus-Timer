@@ -1,0 +1,226 @@
+html
+{
+    height:100%;
+}
+
+body {
+    height:100%;
+        /* background: radial-gradient(#00347c, #ffffff);
+        background-size: 400% 400%;
+        height: 100vh;
+        background-position: 0% 50%; */
+    }
+
+/* .sansita-regular {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    }
+    
+   
+.tomorrow-medium {
+  font-family: "Tomorrow", serif;
+  font-weight: 500;
+  font-style: normal;
+} */
+
+      
+    
+    @keyframes gradient {
+        0% {
+            background-position: center;
+            background-size:100% 100%;
+        }
+        50% {
+            background-position: center;
+            background-size: 250% 250%;
+        }
+        100% {
+            background-position: center;
+            background-size:100% 100%;
+        }
+    }
+
+.addgradient {
+    animation: gradient 10s ease infinite;
+}
+    
+#background {
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.focusBg {
+    background: radial-gradient(rgb(118, 162, 255), rgb(65, 65, 166),rgb(17, 17, 173));
+}
+
+.breakBg {
+    background: radial-gradient(rgb(113, 191, 126), rgb(44, 121, 47),rgb(1, 79, 5));
+}
+
+
+
+@keyframes opacitize {
+    0% {
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%; 
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+.opacitize {
+    animation: opacitize 3s ease
+}
+
+.deopacitize { 
+    animation: opacitize 3s ease reverse;
+}
+
+
+#header {
+    position: relative;
+        /* tested for visibility
+        border-style: dashed;
+        border-width: 1px; */
+}
+
+#logo {
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 175%;
+    color: whitesmoke;
+    position: relative;
+    display:inline-block;
+    text-align: center;
+    padding: 1% 5%;
+    left: 50%;
+    transform: translateX(-50%);
+       /* tested for visibility */
+       /* border-style: dashed;
+       border-width: 1px; */
+    pointer-events: none;
+}
+
+/* #rectangle {
+   width:50%;
+   height:1px;
+   background-color: blue;
+     /* tested for visibility */
+        /* border-style: dashed;
+        border-width: 1px;
+        border-color:black;
+    position:relative;
+    top: 1rem;
+    left: 25%;
+} */
+    
+h1 {
+    color: black;
+    font-size: 36px;
+    /* tested for visibility */
+        /* border-style: dashed;
+        border-width: 1px;
+        border-color:black; */
+    position:relative;
+    top: 1em;
+}
+#timer {
+    font-family: "Tomorrow", serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 250%;
+    color:rgb(234, 234, 234);
+    position: relative;
+    padding:.5em;
+    height: 25%;
+    width: 25%;
+    left: 50%;
+    top: 40%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+        /* tested for visibility */
+        /* border-style: dashed;
+        border-width: 1px; */
+
+        background-color: rgba(255, 255, 255, 0.193);
+        border: 1px solid rgb(209,213,219);
+        border-radius: 30px;
+}
+
+#focus, #break{
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    position: relative;
+    top: 2em;
+    width: 25%;
+    margin: 10% 10%;
+    padding: 2.5% .5%;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    background-color: white;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 1em;
+    box-sizing: border-box;
+    display: inline-block;
+     /* tested for visibility */
+     /* border-style: dashed;
+     border-width: 1px;
+     border-color:black; */
+}
+
+#starttimer {
+    font-family: "Sansita", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40%;
+    position: absolute;
+    width: auto;
+    left:50%;
+    transform: translate(-75%);
+    top:60%;
+    margin: 10%;
+    padding: 1% 15%;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    background-color: white;
+    border: 1px solid rgb(209,213,219);
+    border-radius: 1rem;
+    box-sizing: border-box;
+    display: block;
+    /* border-style: dashed;
+    border-width: 1px;
+    border-color:black; */
+}
+
+#numbers, #message {
+    user-select: none;
+    transform: translateY(50%);
+}
+
+p:hover{
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button:p:active{
+    color:green;
+    transform: translatey(4px);
+}
+
+/* CSS */
+.button:hover {
+  background-color: rgb(249,250,251);
+}
+
+.button:focus-visible {
+  box-shadow: none;
+}
